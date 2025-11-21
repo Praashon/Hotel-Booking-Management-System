@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Logo */
+#logo {
+  margin: 0 60px;
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#hotel-name {
+  color: purple;
+  font-size: 1.5rem;
+}
+
+.HD-logo {
+  font-size: 2rem;
+  color: #800698;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 6vh;
+  border-bottom: 1px solid lightgray;
+  padding: 0 70px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #66069a;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-contents a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-contents a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-contents {
+  display: block;
+}
+
+/* Signup Button */
+#signup,
+#bookhere {
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#signup {
+  color: white;
+  background-color: #3498db;
+}
+
+#bookhere {
+  color: black;
+  background-color: #f1f1f1;
+}
+
+/* Header Contents */
+.image-content {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-content img {
+  width: 80%;
+  max-width: 60%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.image-content h1,
+.image-content p {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+}
+
+.image-content h1 {
+  top: 45%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+
+.image-content p {
+  top: 55%;
+  font-size: 1.2rem;
+}
+
+.image-content a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 15px;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+#getstarted {
+  position: relative;
+  top: 11vh;
+  background-color: #3498db;
+  color: white;
+}
+
+#learnmore {
+  position: relative;
+  top: 11vh;
+  background-color: white;
+  color: #800080;
+}
+
+.image-content a:hover {
+  opacity: 0.8;
+}
+
+/* Main Contents */
+.main-contents {
+  text-align: left;
+  padding: 20px 15%;
+  margin-top: 30px;
+}
+
+#hotel-ticket {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hotel Card Styles */
+  ards-room,
+.cards-services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card,
+.serviceCard {
+  flex: 0 1 calc(33.333% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.card:hover,
+.serviceCard:hover {
+  transform: scale(1.01);
+}
+
+.card img,
+.serviceCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card h2,
+.serviceCard h2 {
+  padding: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card p,
+.serviceCard p {
+  padding: 0 15px 15px;
+  color: #666;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+  background-color: #057dcc;
+}
+
+/* Reservation Form */
+.reservation-container {
+  max-width: 510px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #057dcc;
+}
+
+#services{
+  margin-top: 50px;
+}
