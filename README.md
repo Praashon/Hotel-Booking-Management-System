@@ -404,7 +404,7 @@ This project is licensed under the MIT License.
 
 For issues and questions:
 - Open an issue on GitHub
-- Email: support@hoteldynasty.com
+- Email: mr.prashon@gmail.com
 
 ## 🔮 Future Enhancements
 
